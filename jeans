@@ -1,0 +1,13 @@
+#ifndef JEANS_H
+#define JEANS_H
+#include "CasualClothing.h"
+
+class Jeans : public CasualClothing {
+public:
+    Jeans(std::string material) : CasualClothing(material) {}
+    void display() const override {
+        std::cout << "Jeans: ";
+        CasualClothing::display();
+    }
+};
+#endif
